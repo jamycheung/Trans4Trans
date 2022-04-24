@@ -15,11 +15,11 @@ We build upon a portable system based on the proposed Trans4Trans model, aiming 
 
 Please refer to our conference paper.
 
-**Trans4Trans: Efficient Transformer for Transparent Object Segmentation to Help Visually Impaired People Navigate in the Real World**, ICCVW 2021, [[paper](arxiv.org/pdf/2107.03172.pdf)].
+**Trans4Trans: Efficient Transformer for Transparent Object Segmentation to Help Visually Impaired People Navigate in the Real World**, ICCVW 2021, [[paper](https://arxiv.org/pdf/2107.03172.pdf)].
 
 For more details and the driving scene segmentation on benchmarks including Cityscapes, ACDC, and DADAseg, please refer to the journal version.
 
-**Trans4Trans: Efficient Transformer for Transparent Object and Semantic Scene Segmentation in Real-World Navigation Assistance**, T-ITS 2021, [[paper](arxiv.org/pdf/2108.09174.pdf)].
+**Trans4Trans: Efficient Transformer for Transparent Object and Semantic Scene Segmentation in Real-World Navigation Assistance**, T-ITS 2021, [[paper](https://arxiv.org/pdf/2108.09174.pdf)].
 
 
 ## Installation
