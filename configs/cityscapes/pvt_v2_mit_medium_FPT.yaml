@@ -1,0 +1,28 @@
+DATASET:
+    NAME: "cityscape"
+    MEAN: [0.485, 0.456, 0.406]
+    STD: [0.229, 0.224, 0.225]
+    WORKERS: 8
+TRAIN:
+    EPOCHS: 200
+    BATCH_SIZE: 4
+    CROP_SIZE: (512,512)
+    BASE_SIZE: 512
+    BACKBONE_PRETRAINED_PATH: "pretrained/mit_b3.pth"
+    MODEL_SAVE_DIR: 'workdirs/cityscapes/pvtv2_mit_b3_FPT'
+    APEX: True
+TEST:
+    BATCH_SIZE: 4
+    CROP_SIZE: (512,512)
+    TEST_MODEL_PATH: 'workdirs/cityscapes/pvtv2_mit_b3_FPT/best_model.pth'
+
+SOLVER:
+    OPTIMIZER: "adamw"
+    LR: 0.00005
+MODEL:
+    MODEL_NAME: "PVTV2_MIT_FPT"
+    BACKBONE: "mit_b3"
+    EMB_CHANNELS: 256
+
+AUG:
+    CROP: True

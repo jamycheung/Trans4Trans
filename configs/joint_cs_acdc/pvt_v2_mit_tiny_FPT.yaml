@@ -1,0 +1,31 @@
+DATASET:
+    NAME: "acdc"
+    MEAN: [0.485, 0.456, 0.406]
+    STD: [0.229, 0.224, 0.225]
+    WORKERS: 8
+
+DATASET2:
+    NAME: "cityscape"
+TRAIN:
+    EPOCHS: 200
+    BATCH_SIZE: 2
+    CROP_SIZE: (512,512)
+    BASE_SIZE: 512
+    BACKBONE_PRETRAINED_PATH: "pretrained/mit_b1.pth"
+    MODEL_SAVE_DIR: 'workdirs/joint_cs_acdc/pvtv2_mit_b1_FPT'
+    APEX: True
+TEST:
+    BATCH_SIZE: 2
+    CROP_SIZE: (512,512)
+    TEST_MODEL_PATH: 'workdirs/joint_cs_acdc/pvtv2_mit_b1_FPT/best_model.pth'
+
+SOLVER:
+    OPTIMIZER: "adamw"
+    LR: 0.00005
+MODEL:
+    MODEL_NAME: "PVTV2_FPT_JOINT"
+    BACKBONE: "mit_b1"
+    EMB_CHANNELS: 64
+
+AUG:
+    CROP: True
